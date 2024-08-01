@@ -38,4 +38,7 @@ git rm --cached nomearquivo ##__## RETIRA O ARQUIVO DO REPOSITÓRIO, OPOSTO DO A
 git remote -v ##__## MOSTRA OS REPOSITÓRIOS REMOTOS CONFIGURADOS
 git remote add linkrep ##__## ADICIONA UM REPOSITÓRIO REMOTO
 
+git push #__# Manda para REP
+git pull #_# Baixa para REP local
+
 
