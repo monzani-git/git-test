@@ -1,0 +1,41 @@
+git config --global user.name "Brian Monzani" ##__## CONFIGURA O NOME DO USUÁRIO GLOBALMENTE
+git config --global user.email "monzaniobrian31@gmail.com" ##__## CONFIGURA O EMAIL DO USUÁRIO GLOBALMENTE
+
+git init ##__## INICIA REPOSITÓRIO
+git config --global init.defaultBranch master ##__## DEFINE A BRANCH MASTER
+
+git status ##__## MOSTRA O STATUS DOS ARQUIVOS NO REPOSITÓRIO
+
+git add nome-arquivo ##__## ADICIONA O ARQUIVO DESCRITO
+git add . ##__## ADICIONA TODOS OS ARQUIVOS
+
+git commit -m "Mensagem descritiva sobre o que foi adicionado ou modificado" ##__## CRIA UM COMMIT COM MENSAGEM DESCRITIVA
+
+git diff ##__## MOSTRA ALTERAÇÕES FEITAS NOS ARQUIVOS
+git diff --staged ##__## MOSTRA ALTERAÇÕES QUE FORAM ADICIONADAS AO STAGE
+
+git log ##__## VERIFICA COMMITS FEITOS
+
+git log --oneline ##__## MOSTRA APENAS O TÍTULO DA ALTERAÇÃO
+
+git log -p ##__## MOSTRA DETALHES ALTERADOS NOS ARQUIVOS EM CADA COMMIT
+
+git commit --amend --no-edit ##__## EDITA O ÚLTIMO COMMIT FEITO SEM ABRIR O EDITOR
+
+git config --global core.editor "code --wait" ##__## CONFIGURA O VSCODE COMO EDITOR PADRÃO
+git commit --amend ##__## ABRE O VSCODE PARA EDITAR O COMMIT
+
+code . ##__## ABRE A PASTA DE ARQUIVOS NO VSCODE
+
+git checkout 'numero final do commit' ##__## "VOLTA NO TEMPO" OS ARQUIVOS ESCOLHENDO A VERSÃO DO COMMIT
+
+git checkout NomeArquivo.txt ##__## VOLTA AS ALTERAÇÕES DO ARQUIVO ANTES DE FAZER COMMIT
+
+git clean -f ##__## REMOVE ARQUIVOS ADICIONADOS QUE NÃO FORAM PARA O COMMIT
+
+git rm --cached nomearquivo ##__## RETIRA O ARQUIVO DO REPOSITÓRIO, OPOSTO DO ADD
+
+git remote -v ##__## MOSTRA OS REPOSITÓRIOS REMOTOS CONFIGURADOS
+git remote add linkrep ##__## ADICIONA UM REPOSITÓRIO REMOTO
+
+
