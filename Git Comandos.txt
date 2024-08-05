@@ -17,6 +17,7 @@ git diff --staged ##__## MOSTRA ALTERAÇÕES QUE FORAM ADICIONADAS AO STAGE
 git log ##__## VERIFICA COMMITS FEITOS
 
 git log --oneline ##__## MOSTRA APENAS O TÍTULO DA ALTERAÇÃO
+git log BRANCH --oneline #_# MOSTRA OS COMMITS FEITOS NA BRANCH SELECIONADA
 
 git log -p ##__## MOSTRA DETALHES ALTERADOS NOS ARQUIVOS EM CADA COMMIT
 
@@ -41,11 +42,14 @@ git remote add linkrep ##__## ADICIONA UM REPOSITÓRIO REMOTO
 git push #__# Manda para REP
 git pull #_# Baixa para REP local
 
-git branch | git branch --list #_# LISTA AS BRANCH
-git branch dev #_# CRIAR BRANCH "DEV" 
-git checkout dev #_# ATIVA A BRANCH DEV
-git switch NomeBranch #_# TROCA PARA A BRANCH ESCRITA
-git switch - #_# VOLTA PARA A BRANCH ANTERIOR
+git push -u origin dev #_# MANDA BRANCH PARA REP SEM TER NADA VINCULADO A BRANCH
+git branch -d "ou" -D dev #_# APAGA A BRANCH E COM O D MAIUSCULO FORÇA CASO GIT PEÇA CONFIRMAÇÃO
+git push --delete origin dev2 #_# APAGA BRANCH REMOTA
+
+git merge BRANCH #_# TRAZ AS MUDANÇAS PARA A BRANCH ATUAL NO WORKTREE
+
+
+
 
 
 
