@@ -49,13 +49,33 @@ git push --delete origin dev2 #_# APAGA BRANCH REMOTA
 git merge BRANCH #_# TRAZ AS MUDANÇAS PARA A BRANCH ATUAL NO WORKTREE
 
 <<<<<<< HEAD
-
-
-
-
-=======
 git revert HEAD #_# OU USAR O HEAD PARA ULTIMO COMMIT OU TROCAR HEAD PARA HEAD DO COMMIT DESEJADO
 >>>>>>> dev
+
+UTILIDADE - ALIAS 
+
+git config --global alias.line 'log --oneline' #_# PARA ABREVIAR COMANDOS LONGOS NO GIT APOS O ALIAS. ESCOLHER NOME DA FUNÇÃO E DEPOIS DE '' COLOCAR QUAL FUNÇÃO RECEBE O ALIAS.
+
+git config --global --unset alias.LINE #_# PARA DESCONFIGURAR O ALIAS
+
+
+GREP - #_#  Após o comando colocar pipe | grep PalavraCoringa  #_# COMANDO DE LINUX QUE PODE SER USADO NO GIT BASH, FILTRAR PALAVRA CORINGA "Letras CAPS fazem diferença na busca"
+
+Exemplo para buscar branch ou buscar por nome de commit
+
+git branch | grep xxxxx
+git log --oneline | grep xxxxx
+
+
+
+
+
+
+
+
+
+
+
 
 
 
